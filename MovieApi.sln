@@ -13,9 +13,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{C781435A-4618-4364-8B59-38DCA08C79AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Domain", "Core\MovieApi.Domain\MovieApi.Domain.csproj", "{ED1802BA-876B-4790-97DE-8DB7D99B3D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.Persistance", "Infrastructure\MovieApi.Persistance\MovieApi.Persistance.csproj", "{EA530170-1366-4EF5-A735-D6E2C3A0A168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieApi.WebApi", "Presentation\MovieApi.WebApi\MovieApi.WebApi.csproj", "{19C92B6D-1904-4097-8937-D77A017463BD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED1802BA-876B-4790-97DE-8DB7D99B3D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1802BA-876B-4790-97DE-8DB7D99B3D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1802BA-876B-4790-97DE-8DB7D99B3D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1802BA-876B-4790-97DE-8DB7D99B3D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA530170-1366-4EF5-A735-D6E2C3A0A168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA530170-1366-4EF5-A735-D6E2C3A0A168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA530170-1366-4EF5-A735-D6E2C3A0A168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA530170-1366-4EF5-A735-D6E2C3A0A168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C92B6D-1904-4097-8937-D77A017463BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C92B6D-1904-4097-8937-D77A017463BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C92B6D-1904-4097-8937-D77A017463BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C92B6D-1904-4097-8937-D77A017463BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED1802BA-876B-4790-97DE-8DB7D99B3D53} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EA530170-1366-4EF5-A735-D6E2C3A0A168} = {31501856-7A62-4285-85A9-0F28C04779DE}
+		{19C92B6D-1904-4097-8937-D77A017463BD} = {B9643A5E-D8D9-4FB1-809D-E6584A768007}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55AC035F-43AC-44C1-9F89-D0EC6C236D9E}
