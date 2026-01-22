@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MovieApi.Domain.Entities;
+using MovieApi.Persistance.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Persistance.Context
 {
-    public class MovieContext:DbContext
+    public class MovieContext:IdentityDbContext<AppUser> // burasi ilk basta DbContext idi simdi IdentityDbContext yaptik ve AppUser den tablodaki sutunlari ekledik
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
