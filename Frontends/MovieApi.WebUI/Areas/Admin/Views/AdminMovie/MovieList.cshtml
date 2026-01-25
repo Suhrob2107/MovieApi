@@ -1,0 +1,52 @@
+﻿@model List<AdminResultMovieDto>
+@{
+    ViewData["Title"] = "MovieList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <h5 class="mb-0">Customer Details</h5>
+            <form class="ms-auto position-relative">
+                <div class="position-absolute top-50 translate-middle-y search-icon px-3"><ion-icon name="search-sharp"></ion-icon></div>
+                <input class="form-control ps-5" type="text" placeholder="search">
+            </form>
+        </div>
+        <div class="table-responsive mt-3">
+            <table class="table align-middle">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>Film</th>
+                        <th>Kategori</th>
+                        <th>Reyting</th>
+                        <th>Yıl</th>
+                        <th>Durum</th>
+                        <th>Sil</th>
+                        <th>Guncelle</th>
+                        <th>Detay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MovieId</td>
+                            <td>@item.Title</td>
+                            <td>@item.Duration</td>
+                            <td>@item.Rating</td>
+                            <td>@item.CreatedYear</td>
+                            <td>@item.Status</td>
+                            <td><a href="#" class="btn btn-danger">Sil</a></td>
+                            <td><a href="#" class="btn btn-success">Guncelle</a></td>
+                            <td><a href="#" class="btn btn-warning">Detaylar</a></td>
+                        </tr>
+                    }
+                
+                </tbody>
+            </table>
+            <a href="#" class="btn btn-primary">Yeni gilm giris</a>
+        </div>
+    </div>
+</div>
